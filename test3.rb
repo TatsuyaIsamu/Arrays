@@ -50,15 +50,15 @@
     str = a[0].upcase!
     # このとき a[0] のみ更新される
 
-    # なぜこうなるのか？
-    #   a = ["a", "a", "a"]
-    #   a[0].object_id
-    #   a[1].object_ida[1].object_id
-    #     a[0] と a[1] は異なるオブジェクト
-    #   a = Array.new(5, "default")
-    #   a[0].object_id
-    #   a[1].object_id
-    #     a[0] と a[1] は同じオブジェクト
+    なぜこうなるのか？
+      a = ["a", "a", "a"]
+      a[0].object_id
+      a[1].object_id
+        a[0] と a[1] は異なるオブジェクト
+      a = Array.new(5, "default")
+      a[0].object_id
+      a[1].object_id
+        a[0] と a[1] は同じオブジェクト
 
     # ブロックで初期値を与えることで初期値を異なるオブジェクトで生成する
 

@@ -3,8 +3,7 @@
   arr = [1, 2, 3, 4, 5]
 
     arr[1, 3]
-    arr.values_at(0, 2, 4)
-    arr[a.size - 1] 
+    arr.values_at(0, 2, 4) 
     arr[-1]
     arr[-2, 2]
     arr.last
